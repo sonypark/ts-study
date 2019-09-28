@@ -4,12 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "serve": "serve src"
+    "dev": "webpack-dev-server",
+    "build": "webpack",
+    "serve": "webpack && serve dist"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "serve": "^11.0.0"
+  },
+  "devDependencies": {
+    "ts-loader": "^6.1.2",
+    "typescript": "^3.6.3",
+    "webpack": "^4.41.0",
+    "webpack-dev-server": "^3.8.1"
   }
 }
