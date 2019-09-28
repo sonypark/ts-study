@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server",
+    "dev": "webpack-dev-server --inline --hot",
     "build": "webpack",
     "serve": "webpack && serve dist"
   },
@@ -15,6 +15,9 @@
     "serve": "^11.0.0"
   },
   "devDependencies": {
+    "css-loader": "^3.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^1.0.0",
     "ts-loader": "^6.1.2",
     "typescript": "^3.6.3",
     "webpack": "^4.41.0",
